@@ -1,0 +1,17 @@
+The below code will open the link in a new window:
+
+String selectAll = Keys.chord(Keys.SHIFT, Keys.RETURN);
+driver.findElement(By.linkText("linkname")).sendKeys(selectAll);
+
+2 JavascriptExecutor jse = (JavascriptExecutor)driver;
+jse.executeScript("window.open()");
+
+3 //JavascriptExecutor js=(JavascriptExecutor) driver;
+			//	String a = "window.open('about:blank','_blank');";
+		//String a = "window.open('https://www.makemytrip.com/','_blank');";
+				//((JavascriptExecutor) driver).executeScript(a);
+
+4 Scrolling to specfic locators
+ ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", m);
+      
+				
